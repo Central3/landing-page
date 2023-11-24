@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", "PT Sans", Calibri, Tahoma, sans-serif;
     margin: 0;
@@ -17,7 +23,7 @@ p {
 
 header {
     background-color: #1f2937;
-    padding: 10px 64px 30px;
+    padding: 10px 100px 30px;
 }
 
 nav {
@@ -50,6 +56,10 @@ nav ul {
     margin: 8px 0;
 }
 
+.hero .main {
+    margin-right: 8px;
+}
+
 .hero h1 {
     font-size: 48px;
     font-weight: 900;
@@ -75,4 +85,28 @@ nav a {
     padding: 8px 32px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+
+#info {
+    padding: 10px 100px 30px;
+}
+
+#info h2 {
+    font-size: 32px;
+    color: #1f2937;
+    font-weight: 900;
+    text-align: center;
+    margin: 16px 0;
+}
+
+#info img {
+    width: 100%;
+}
+
+#info .random {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
 }
