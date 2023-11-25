@@ -64,7 +64,7 @@ body {
 
 .hero {
     display: flex;
-    margin: 32px 0;
+    margin: 80px 0;
 }
 
 .hero__main * {
@@ -96,7 +96,7 @@ body {
 
 /* Info section */
 .info {
-    padding: 60px 140px 60px;
+    padding: 80px 100px 80px;
 }
 
 .info__title {
@@ -107,21 +107,31 @@ body {
     margin-bottom: 36px;
 }
 
+.info__desc {
+    text-align: center;
+    flex: 1;
+}
+
 .info__image {
-    width: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
 }
 
 .info__random {
     display: flex;
     gap: 16px;
     margin: 16px 0;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 
 
 /* Testimonial section */
 .testimonial {
     background-color: #e5e7eb;
-    padding: 60px 140px 60px;
+    padding: 100px 200px;
 }
 
 .testimonial__quote {
@@ -140,7 +150,7 @@ body {
 
 /* cta-section */
 .call-to-action {
-    padding: 60px 100px;
+    padding: 100px 200px;
 }
 
 .call-to-action__btn--white-border {
@@ -151,7 +161,7 @@ body {
     background-color: #3882f6;
     display: flex;
     justify-content: space-between;
-    padding: 32px 48px;
+    padding: 48px 64px;
     align-items: center;
     border-radius: 5px;
     color: #e5e7eb;
@@ -163,5 +173,5 @@ body {
     text-align: center;
     background-color: #1f2937;
     color: #e5e7eb;
-    padding: 16px 100px;
+    padding: 24px 100px;
 }
