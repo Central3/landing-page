@@ -13,27 +13,27 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <p id="logo">Header Logo</p>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+    <header class="header">
+      <nav class="header__nav">
+        <p class="header__logo">Header Logo</p>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#" class="header__menu-link">Home</a></li>
+          <li class="header__menu-item"> <a href="#" class="header__menu-link">About</a> </li>
+          <li class="header__menu-item"><a href="#" class="header__menu-link">Contact</a></li>
         </ul>
       </nav>
 
       <div class="hero">
-        <div class="main">
-          <h1>This Website is awesome</h1>
-          <p>
+        <div class="hero__main">
+          <h1 class="hero__title">This Website is awesome</h1>
+          <p class="hero__description">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
             voluptates ut reprehenderit qui facilis voluptatibus nisi
             asperiores.
           </p>
-          <button class="cta-btn">Sign up</button>
+          <button class="hero__cta-btn">Sign up</button>
         </div>
-        <div class="photo">
+        <div class="hero__photo">
           <img
             src="https://images.unsplash.com/photo-1690484289850-8414002f9284?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
@@ -42,75 +42,79 @@
       </div>
     </header>
 
-    <section id="info">
-      <h2>Some random information.</h2>
+    <section class="info">
+      <h2 class="info__title">Some random information.</h2>
 
-      <div class="random">
-        <div class="desc">
+      <div class="info__random">
+        <div class="info__desc">
           <img
             src="https://images.unsplash.com/photo-1657543965889-62f45f4cc127?q=80&w=1625&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
+            class="info__image"
           />
-          <p>
+          <p class="info__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dicta.
           </p>
         </div>
 
-        <div class="desc">
+        <div class="info__desc">
           <img
             src="https://images.unsplash.com/photo-1686100510355-13ceae4019c3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
+            class="info__image"
           />
-          <p>
+          <p class="info__text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
             veniam ea, amet alias tenetur incidunt.
           </p>
         </div>
 
-        <div class="desc">
+        <div class="info__desc">
           <img
             src="https://images.unsplash.com/photo-1651315360118-68124b3ae19f?q=80&w=1623&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
+            class="info__image"
           />
-          <p>
+          <p class="info__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
             fugit odit sequi.
           </p>
         </div>
 
-        <div class="desc">
+        <div class="info__desc">
           <img
             src="https://images.unsplash.com/photo-1698730905422-eff2365e5fd4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
+            class="info__image"
           />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         </div>
       </div>
     </section>
 
     <section class="testimonial">
-      <p class="quote">
+      <p class="testimonial__quote">
         Great ambition is the passion of a great character. Those endowed with
         it may perform very good or very bad acts. All depends on the principles
         which direct them.
       </p>
-      <p class="person">-Napoleon Bonaparte, French Emperor</p>
+      <p class="testimonial__person">-Napoleon Bonaparte, French Emperor</p>
     </section>
 
-    <section class="cta-section">
-      <div class="cta">
-        <div class="content">
-          <h2>Call to action! It's time!</h2>
-          <p>
+    <section class="call-to-action">
+      <div class="call-to-action__container">
+        <div class="call-to-action__content">
+          <h2 class="call-to-action__title">Call to action! It's time!</h2>
+          <p class="call-to-action__description">
             Sign up for our product by clicking that button right over there!
           </p>
         </div>
-        <button class="cta-btn">Sign up</button>
+        <button class="call-to-action__btn call-to-action__btn--white-border">Sign up</button>
       </div>
     </section>
 
-    <footer>
-      <p>Copyright &copy; Project Arch 2023</p>
+    <footer class="footer">
+      <p class="footer__copyright">Copyright &copy; Project Arch 2023</p>
     </footer>
   </body>
 </html>

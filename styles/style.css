@@ -1,14 +1,11 @@
+/* CSS resets */
 *,
 *:before,
 *:after {
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Roboto", "PT Sans", Calibri, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* combining selectors */
 
 h1,
 h2,
@@ -21,63 +18,13 @@ p {
     margin: 0;
 }
 
-header {
-    background-color: #1f2937;
-    padding: 24px 100px 60px;
+body {
+    font-family: "Roboto", "PT Sans", Calibri, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#logo {
-    font-size: 24px;
-    color: #f9faf8;
-}
-
-nav a {
-    text-decoration: none;
-    margin-left: 15px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.hero {
-    display: flex;
-    margin: 32px 0;
-}
-
-.hero .main * {
-    margin: 8px 0;
-}
-
-.hero .main {
-    margin-right: 8px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
-}
-
-.hero p,
-nav a {
-    font-size: 18px;
-    color: #e5e7eb;
-}
-
-.hero img {
-    width: 500px;
-    height: auto;
-}
-
-.cta-btn {
+.hero__cta-btn, .call-to-action__btn {
     background-color: #3882f6;
     border: none;
     color: #f9faf8;
@@ -87,13 +34,72 @@ nav a {
     cursor: pointer;
 }
 
+/* Header section */
+
+.header {
+    background-color: #1f2937;
+    padding: 24px 100px 60px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+}
+
+.hero {
+    display: flex;
+    margin: 32px 0;
+}
+
+.hero__main * {
+    margin: 8px 0;
+}
+
+.hero__main {
+    margin-right: 8px;
+    align-self: center;
+}
+
+.hero__title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero__description,
+.header__menu-link {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero__photo img {
+    width: 500px;
+    height: auto;
+}
 
 
-#info {
+/* Info section */
+.info {
     padding: 60px 140px 60px;
 }
 
-#info h2 {
+.info__title {
     font-size: 32px;
     color: #1f2937;
     font-weight: 900;
@@ -101,22 +107,24 @@ nav a {
     margin-bottom: 36px;
 }
 
-#info img {
+.info__image {
     width: 100%;
 }
 
-#info .random {
+.info__random {
     display: flex;
     gap: 16px;
     margin: 16px 0;
 }
 
+
+/* Testimonial section */
 .testimonial {
     background-color: #e5e7eb;
     padding: 60px 140px 60px;
 }
 
-.testimonial .quote {
+.testimonial__quote {
     font-size: 36px;
     color: #1f2937;
     font-weight: 100;
@@ -124,20 +132,22 @@ nav a {
     margin: 16px 0 4px;
 }
 
-.testimonial .person {
+.testimonial__person {
     float: right;
     font-weight: 900;
 }
 
-.cta-section {
+
+/* cta-section */
+.call-to-action {
     padding: 60px 100px;
 }
 
-.cta-section .cta-btn {
+.call-to-action__btn--white-border {
     border: 1px solid #e5e7eb;
 }
 
-.cta {
+.call-to-action__container {
     background-color: #3882f6;
     display: flex;
     justify-content: space-between;
@@ -148,8 +158,8 @@ nav a {
 }
 
 
-
-footer {
+/* Footer */
+.footer {
     text-align: center;
     background-color: #1f2937;
     color: #e5e7eb;
